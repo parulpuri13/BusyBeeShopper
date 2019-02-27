@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/border"
+    android:id="@+id/layout_item"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/userIcon"
+        android:src="@drawable/ic_group"/>
+
+    <TextView
+        android:id="@+id/individualItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/userIcon"
+        android:hint="Data"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/itemAddedBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individualItem"
+        android:layout_marginTop="11dp"
+        android:layout_toRightOf="@+id/itemDescription"
+        android:layout_marginLeft="40dp"
+        android:hint="User who added item"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/individualItem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/userIcon"
+        android:hint="Item Description"
+        android:textSize="10sp"/>
+
+
+</RelativeLayout>
